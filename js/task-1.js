@@ -1,3 +1,25 @@
+/* practice-11 (we return total price of the product, if product is not found, we return message. Interesting experience, i cant use else) */
+/*
+function calculateTotalPrice(productName) {
+  const products = [
+    { name: "Radar", price: 1300, quantity: 4 },
+    { name: "Scanner", price: 2700, quantity: 3 },
+    { name: "Droid", price: 400, quantity: 7 },
+    { name: "Grip", price: 1200, quantity: 9 },
+  ];
+
+  let totalPrice = 0;
+    for (const i of products) {
+        if (i.name === productName) { 
+            return totalPrice = i.price * i.quantity;
+        }
+    }
+    
+    return `Product ${productName} not found!`;
+}
+
+console.log(calculateTotalPrice("Scanner"));
+*/
 
 /* practice-10 (we return all values from the array of objects by propName, if propName is not exist, we return empty array) */
 /*
