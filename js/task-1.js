@@ -1,3 +1,54 @@
+const colors = [
+  { hex: "#f44336", rgb: "244,67,54" },
+  { hex: "#2196f3", rgb: "33,150,243" },
+  { hex: "#4caf50", rgb: "76,175,80" },
+  { hex: "#ffeb3b", rgb: "255,235,59" },
+];
+
+const hexColors = [];
+const rgbColors = [];
+const keys = Object.keys(colors[0]); // i want to get key by number but i can use key by name, example: i.hex
+
+for (const i of colors) {
+  hexColors.push(i.hex);
+  rgbColors.push(i.rgb);
+}
+
+console.log(hexColors);
+console.log(rgbColors);
+console.log(keys);
+
+/* practice-7 (for of loop with objects) */
+/*
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  }
+];
+
+for (const book of books) {
+  console.log(book); // Об'єкт книги
+  console.log(book.title); // Назва
+  console.log(book.author); // Автор
+  console.log(book.rating); // Рейтинг
+}
+*/
+
+/* practice-6 */
+/*
+
 function countTotalSalary(salaries) {
   let totalSalary = 0;
 
@@ -14,6 +65,7 @@ console.log(countTotalSalary({
   poly: 150,
   alfred: 80,
 }));
+*/
 
 /* practice kays and values */
 /*
