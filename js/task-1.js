@@ -1,3 +1,51 @@
+
+/* practice-10 (we return all values from the array of objects by propName, if propName is not exist, we return empty array) */
+/*
+function getAllPropValues(propName) {
+  const products = [
+    { name: "Radar", price: 1300, quantity: 4 },
+    { name: "Scanner", price: 2700, quantity: 3 },
+    { name: "Droid", price: 400, quantity: 7 },
+    { name: "Grip", price: 1200, quantity: 9 },
+  ];
+
+  let allArg = [];
+
+    for (const i of products) {
+      if(i[propName]){
+        allArg.push(i[propName]);
+      } else {
+        return allArg;
+      }
+  }
+
+  return allArg;
+}
+
+console.log(getAllPropValues("category"));
+*/
+
+/* practice-9 (practice array of objects, use loop for taking keys and values)*/
+/*
+const books = [
+  { title: "The Last Kingdom", author: "Bernard Cornwell" },
+  { title: "Beside Still Waters", author: "Robert Sheckley" },
+  { title: "The Dream of a Ridiculous Man", author: "Fyodor Dostoevsky" }
+];
+
+const authorToSearchFor = "Robert Sheckley";
+
+for (const book of books) {
+	if(book.author === authorToSearchFor) {
+		console.log(book);
+		console.log(book.title)
+		console.log(book.rating)
+	}
+}
+
+
+/* practice-8 (practice array of objects, use loop for taking keys and values)*/
+/*
 const colors = [
   { hex: "#f44336", rgb: "244,67,54" },
   { hex: "#2196f3", rgb: "33,150,243" },
