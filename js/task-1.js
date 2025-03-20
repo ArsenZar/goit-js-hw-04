@@ -1,4 +1,62 @@
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
 
+    let keys = Object.values(salaries);
+    
+  for(const key of keys){
+      totalSalary += key;
+  }
+  return totalSalary;
+}
+
+console.log(countTotalSalary({
+  mango: 100,
+  poly: 150,
+  alfred: 80,
+}));
+
+/* practice kays and values */
+/*
+
+function countProps(object) {
+  let propCount = 0;
+    let keys = Object.keys(object);
+    let values = Object.values(object);
+    
+
+  return keys.concat(values);
+}
+
+let obj = {
+  name: "Mango",
+  age: 2,
+  isHappy: true,
+  hobby: "html",
+  premium: true,
+};
+
+console.log(countProps(obj));
+
+*/
+
+
+/* object-keys */
+/*
+
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const values = [];
+const keys = Object.keys(apartment);
+
+for(const key of keys){
+  values.push(apartment[key]);
+}
+
+console.log(values);
+*/
 
 /* practice-5 */
 /* this example shows how to get keys and values from an object if we don`t know the keys and values */
