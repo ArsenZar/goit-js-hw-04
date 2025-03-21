@@ -1,3 +1,30 @@
+
+/* practice-13 (try to fix problem with return, i use consol.log in after return... i learn this)))*/
+
+const atTheOldToad = {
+  potions: ["Speed potion", "Stone skin"],
+  getPotions() {
+    return console.log(this.potions);
+  },
+};
+
+atTheOldToad.getPotions();
+
+/* practice-12 (we create array of objects and create a two methods for an object) */
+/*
+const atTheOldToad = {
+  potions: [],
+
+  getPotions(){
+    return "List of all available potions";
+  },
+
+  addPotion(potionName){
+    return `Adding ${potionName}`;
+  },
+};
+*/
+
 /* practice-11 (we return total price of the product, if product is not found, we return message. Interesting experience, i cant use else) */
 /*
 function calculateTotalPrice(productName) {
