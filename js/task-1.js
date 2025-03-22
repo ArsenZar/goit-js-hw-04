@@ -1,6 +1,22 @@
+const bookShelf = {
+  books: [
+		{ title: "The Last Kingdom", rating: 8 }, 
+		{ title: "The Mist", rating: 6 }
+	],
+  getBooks() {
+    return this.books;
+  },
+  addBook(newBook) {
+    this.books.push(newBook);
+  }
+};
+
+bookShelf.addBook({ title: "Dream Guardian", rating: 9 });
+bookShelf.addBook({});
+
 
 /* practice-13 (try to fix problem with return, i use consol.log in after return... i learn this)))*/
-
+/*
 const atTheOldToad = {
   potions: ["Speed potion", "Stone skin"],
   getPotions() {
@@ -9,6 +25,7 @@ const atTheOldToad = {
 };
 
 atTheOldToad.getPotions();
+*/
 
 /* practice-12 (we create array of objects and create a two methods for an object) */
 /*
