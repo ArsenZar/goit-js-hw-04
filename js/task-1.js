@@ -1,3 +1,87 @@
+/* create dublicate object by ...spread */
+/*
+const defaultSettings = {
+  theme: "light",
+  public: true,
+  withPassword: false,
+  minNumberOfQuestions: 10,
+  timePerQuestion: 60,
+};
+const overrideSettings = {
+  public: false,
+  withPassword: true,
+  timePerQuestion: 30,
+};
+
+const finalSettings = {
+  ...defaultSettings,
+  ...overrideSettings,
+  timePerQuestion: 111,
+  newValue: "Hello",
+};
+
+console.log(finalSettings);
+*/
+
+/* practice 17 */
+/*
+const firstGroupScores = [64, 42, 93];
+const secondGroupScores = [89, 14, 51, 26];
+const thirdGroupScores = [29, 47, 18, 97, 81];
+
+const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+const bestScore = Math.max(...allScores);
+const worstScore = Math.min(...allScores);
+
+console.log(bestScore);
+console.log(worstScore);
+*/
+
+/* practice 16 */
+/*
+function getExtremeScores(scores) {
+  let bestValue = Math.max(...scores);
+  let worstValue = Math.min(...scores);
+  const result = {
+    best: bestValue,
+    worst: worstValue,
+  } 
+  return result;
+}
+
+console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26]));
+*/
+
+
+/* practice-15 */
+/*
+function addOverNum(value, ...args) {
+  let result = 0;
+  for (let i of args){
+    if (i > value){
+      result += i;
+    }
+  }
+  return result;
+}
+
+console.log(addOverNum(5, 2, 3, 1, 5, 10, 15));
+*/
+
+/* practice-14 (just remaber about give value for new let for give a type this let or it is undefinde) */
+/*
+function add(...rest) {
+  let result = 0;
+  for (const i of rest) {
+    result += i;
+  }
+  return result;
+}
+
+console.log(add(12, 4, 11, 48));
+*/
+
+/*
 const bookShelf = {
   books: [
 		{ title: "The Last Kingdom", rating: 8 }, 
@@ -13,10 +97,10 @@ const bookShelf = {
 
 bookShelf.addBook({ title: "Dream Guardian", rating: 9 });
 bookShelf.addBook({});
-
+*/
 
 /* practice-13 (try to fix problem with return, i use consol.log in after return... i learn this)))*/
-
+/*
 const atTheOldToad = {
   potions: ["Speed potion", "Stone skin"],
   getPotions() {
@@ -25,10 +109,10 @@ const atTheOldToad = {
 };
 
 atTheOldToad.getPotions();
-
+*/
 
 /* practice-12 (we create array of objects and create a two methods for an object) */
-
+/*
 const atTheOldToad = {
   potions: [],
 
@@ -40,10 +124,10 @@ const atTheOldToad = {
     return `Adding ${potionName}`;
   },
 };
-
+*/
 
 /* practice-11 (we return total price of the product, if product is not found, we return message. Interesting experience, i cant use else) */
-
+/*
 function calculateTotalPrice(productName) {
   const products = [
     { name: "Radar", price: 1300, quantity: 4 },
@@ -63,10 +147,10 @@ function calculateTotalPrice(productName) {
 }
 
 console.log(calculateTotalPrice("Scanner"));
-
+*/
 
 /* practice-10 (we return all values from the array of objects by propName, if propName is not exist, we return empty array) */
-
+/*
 function getAllPropValues(propName) {
   const products = [
     { name: "Radar", price: 1300, quantity: 4 },
@@ -89,10 +173,10 @@ function getAllPropValues(propName) {
 }
 
 console.log(getAllPropValues("category"));
-
+*/
 
 /* practice-9 (practice array of objects, use loop for taking keys and values)*/
-
+/*
 const books = [
   { title: "The Last Kingdom", author: "Bernard Cornwell" },
   { title: "Beside Still Waters", author: "Robert Sheckley" },
@@ -111,7 +195,7 @@ for (const book of books) {
 
 
 /* practice-8 (practice array of objects, use loop for taking keys and values)*/
-
+/*
 const colors = [
   { hex: "#f44336", rgb: "244,67,54" },
   { hex: "#2196f3", rgb: "33,150,243" },
@@ -133,7 +217,7 @@ console.log(rgbColors);
 console.log(keys);
 
 /* practice-7 (for of loop with objects) */
-
+/*
 const books = [
   {
     title: "The Last Kingdom",
@@ -158,10 +242,10 @@ for (const book of books) {
   console.log(book.author); // Автор
   console.log(book.rating); // Рейтинг
 }
-
+*/
 
 /* practice-6 */
-
+/*
 
 function countTotalSalary(salaries) {
   let totalSalary = 0;
@@ -179,10 +263,10 @@ console.log(countTotalSalary({
   poly: 150,
   alfred: 80,
 }));
-
+*/
 
 /* practice kays and values */
-
+/*
 
 function countProps(object) {
   let propCount = 0;
@@ -203,7 +287,7 @@ let obj = {
 
 console.log(countProps(obj));
 
-
+*/
 
 
 /* object-keys */
