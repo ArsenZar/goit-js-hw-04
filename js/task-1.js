@@ -16,7 +16,7 @@ bookShelf.addBook({});
 
 
 /* practice-13 (try to fix problem with return, i use consol.log in after return... i learn this)))*/
-/*
+
 const atTheOldToad = {
   potions: ["Speed potion", "Stone skin"],
   getPotions() {
@@ -25,10 +25,10 @@ const atTheOldToad = {
 };
 
 atTheOldToad.getPotions();
-*/
+
 
 /* practice-12 (we create array of objects and create a two methods for an object) */
-/*
+
 const atTheOldToad = {
   potions: [],
 
@@ -40,10 +40,10 @@ const atTheOldToad = {
     return `Adding ${potionName}`;
   },
 };
-*/
+
 
 /* practice-11 (we return total price of the product, if product is not found, we return message. Interesting experience, i cant use else) */
-/*
+
 function calculateTotalPrice(productName) {
   const products = [
     { name: "Radar", price: 1300, quantity: 4 },
@@ -63,10 +63,10 @@ function calculateTotalPrice(productName) {
 }
 
 console.log(calculateTotalPrice("Scanner"));
-*/
+
 
 /* practice-10 (we return all values from the array of objects by propName, if propName is not exist, we return empty array) */
-/*
+
 function getAllPropValues(propName) {
   const products = [
     { name: "Radar", price: 1300, quantity: 4 },
@@ -89,10 +89,10 @@ function getAllPropValues(propName) {
 }
 
 console.log(getAllPropValues("category"));
-*/
+
 
 /* practice-9 (practice array of objects, use loop for taking keys and values)*/
-/*
+
 const books = [
   { title: "The Last Kingdom", author: "Bernard Cornwell" },
   { title: "Beside Still Waters", author: "Robert Sheckley" },
@@ -111,7 +111,7 @@ for (const book of books) {
 
 
 /* practice-8 (practice array of objects, use loop for taking keys and values)*/
-/*
+
 const colors = [
   { hex: "#f44336", rgb: "244,67,54" },
   { hex: "#2196f3", rgb: "33,150,243" },
@@ -133,7 +133,7 @@ console.log(rgbColors);
 console.log(keys);
 
 /* practice-7 (for of loop with objects) */
-/*
+
 const books = [
   {
     title: "The Last Kingdom",
@@ -158,10 +158,10 @@ for (const book of books) {
   console.log(book.author); // Автор
   console.log(book.rating); // Рейтинг
 }
-*/
+
 
 /* practice-6 */
-/*
+
 
 function countTotalSalary(salaries) {
   let totalSalary = 0;
@@ -179,10 +179,10 @@ console.log(countTotalSalary({
   poly: 150,
   alfred: 80,
 }));
-*/
+
 
 /* practice kays and values */
-/*
+
 
 function countProps(object) {
   let propCount = 0;
@@ -203,7 +203,7 @@ let obj = {
 
 console.log(countProps(obj));
 
-*/
+
 
 
 /* object-keys */
